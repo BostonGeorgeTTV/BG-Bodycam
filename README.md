@@ -3,6 +3,9 @@ Bodycam script FiveM
 
 <img width="1672" height="941" alt="bgbodycam" src="https://github.com/user-attachments/assets/c5125f72-4adb-4317-a824-c819d3960e1e" />
 
+
+<img width="1024" height="1024" alt="bgbc" src="https://github.com/user-attachments/assets/5489c2c0-88de-4ccf-b20a-0cf2cf04afd1" />
+
 BG Bodycam è uno script FiveM moderno e immersivo pensato per server roleplay che vogliono aggiungere una bodycam realistica, elegante e completamente configurabile.
 
 Utilizzando l’item bodycam tramite ox_inventory, il giocatore può accendere o spegnere la camera direttamente dall’inventario. All’attivazione, il ped esegue un’animazione coerente con l’accensione della bodycam sul petto e compare una UI professionale in stile registrazione, con informazioni live del personaggio.
