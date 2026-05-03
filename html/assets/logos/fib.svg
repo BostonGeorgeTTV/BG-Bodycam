@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <circle cx="64" cy="64" r="57" fill="#071719" stroke="#d8fff6" stroke-width="5"/>
+  <circle cx="64" cy="64" r="38" fill="#0f5f66" stroke="#ffffff" stroke-width="3"/>
+  <path d="M64 28l8 25 26 .2-21 15 8 25-21-15-21 15 8-25-21-15 26-.2z" fill="#f7d36a"/>
+  <text x="64" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="900" fill="#052025">FIB</text>
+</svg>

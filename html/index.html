@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bg_bodycam</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <main id="bodycam" class="bodycam hidden" aria-hidden="true">
+        <section class="bodycam__header">
+            <div class="bodycam__brand">
+                <span id="recordDot" class="bodycam__dot"></span>
+                <div>
+                    <p id="title" class="bodycam__title">BODYCAM</p>
+                    <p id="model" class="bodycam__model">BG-CAM X1</p>
+                </div>
+            </div>
+            <img id="logo" class="bodycam__logo" alt="department logo" />
+        </section>
+
+        <section class="bodycam__meta">
+            <p id="department" class="bodycam__department">BODY WORN CAMERA</p>
+            <p id="playerName" class="bodycam__name">NOME COGNOME</p>
+            <p class="bodycam__job"><span id="jobLabel">JOB</span> · <span id="gradeLabel">GRADO</span></p>
+        </section>
+
+        <section class="bodycam__footer">
+            <span class="bodycam__tag">REC</span>
+            <time id="clock" class="bodycam__clock">--/--/---- --:--:--</time>
+        </section>
+
+        <div id="editHint" class="bodycam__edit-hint">Trascina per spostare · ESC per chiudere</div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

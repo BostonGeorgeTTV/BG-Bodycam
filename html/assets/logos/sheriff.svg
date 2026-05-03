@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <circle cx="64" cy="64" r="57" fill="#151007" stroke="#ffe5b3" stroke-width="5"/>
+  <path d="M64 14l13 32 35-5-22 28 22 28-35-5-13 32-13-32-35 5 22-28-22-28 35 5z" fill="#d49a2a" stroke="#fff1c7" stroke-width="3"/>
+  <text x="64" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="800" fill="#2d1b00">BCSO</text>
+</svg>

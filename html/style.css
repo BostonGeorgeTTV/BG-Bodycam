@@ -1,0 +1,200 @@
+:root {
+    --bg: rgba(7, 11, 18, 0.78);
+    --bg-strong: rgba(2, 6, 12, 0.92);
+    --border: rgba(255, 255, 255, 0.18);
+    --text: rgba(255, 255, 255, 0.94);
+    --muted: rgba(255, 255, 255, 0.66);
+    --accent: #e43434;
+    --accent-soft: rgba(228, 52, 52, 0.22);
+}
+
+* {
+    box-sizing: border-box;
+    user-select: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    background: transparent;
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    pointer-events: none;
+}
+
+.bodycam {
+    position: fixed;
+    min-width: 315px;
+    max-width: 360px;
+    transform-origin: top right;
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    background: linear-gradient(145deg, var(--bg), var(--bg-strong));
+    box-shadow: 0 18px 38px rgba(0, 0, 0, 0.32);
+    overflow: hidden;
+    opacity: 1;
+    transition: opacity 160ms ease, transform 160ms ease;
+}
+
+.bodycam.hidden {
+    opacity: 0;
+    transform: translateY(-8px) scale(var(--scale, 1));
+    pointer-events: none;
+}
+
+.bodycam.editing {
+    cursor: grab;
+    pointer-events: auto;
+    outline: 2px dashed rgba(255, 255, 255, 0.38);
+    outline-offset: 6px;
+}
+
+.bodycam.editing:active {
+    cursor: grabbing;
+}
+
+.bodycam__header,
+.bodycam__meta,
+.bodycam__footer {
+    padding: 10px 12px;
+}
+
+.bodycam__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    background: rgba(255, 255, 255, 0.055);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+.bodycam__brand {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.bodycam__dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 999px;
+    background: var(--accent);
+    box-shadow: 0 0 0 7px var(--accent-soft), 0 0 18px rgba(228, 52, 52, 0.85);
+    animation: blink 1.25s infinite;
+}
+
+.bodycam__dot.is-hidden {
+    display: none;
+}
+
+.bodycam__title,
+.bodycam__model,
+.bodycam__department,
+.bodycam__name,
+.bodycam__job {
+    margin: 0;
+}
+
+.bodycam__title {
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.18em;
+    line-height: 1.1;
+}
+
+.bodycam__model {
+    margin-top: 3px;
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    color: var(--muted);
+    text-transform: uppercase;
+}
+
+.bodycam__logo {
+    width: 46px;
+    height: 46px;
+    object-fit: contain;
+    filter: drop-shadow(0 3px 8px rgba(0, 0, 0, 0.35));
+}
+
+.bodycam__logo.is-hidden {
+    display: none;
+}
+
+.bodycam__meta {
+    display: grid;
+    gap: 7px;
+}
+
+.bodycam__department {
+    font-size: 11px;
+    letter-spacing: 0.13em;
+    color: var(--muted);
+    text-transform: uppercase;
+}
+
+.bodycam__name {
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.bodycam__job {
+    font-size: 10px;
+    font-weight: 650;
+    color: rgba(255, 255, 255, 0.78);
+    text-transform: uppercase;
+}
+
+.bodycam__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.09);
+    background: rgba(0, 0, 0, 0.22);
+}
+
+.bodycam__tag {
+    display: inline-flex;
+    align-items: center;
+    min-height: 24px;
+    padding: 0 9px;
+    border: 1px solid rgba(228, 52, 52, 0.45);
+    border-radius: 999px;
+    background: rgba(228, 52, 52, 0.12);
+    color: rgba(255, 255, 255, 0.94);
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+}
+
+.bodycam__clock {
+    font-variant-numeric: tabular-nums;
+    font-size: 10px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.88);
+}
+
+.bodycam__edit-hint {
+    display: none;
+    padding: 9px 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.08);
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 8px;
+    text-align: center;
+}
+
+.bodycam.editing .bodycam__edit-hint {
+    display: block;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.35; }
+}

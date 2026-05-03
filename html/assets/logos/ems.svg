@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <circle cx="64" cy="64" r="57" fill="#18070a" stroke="#ffd5d5" stroke-width="5"/>
+  <path d="M55 24h18v31h31v18H73v31H55V73H24V55h31z" fill="#e63946" stroke="#fff" stroke-width="3"/>
+  <text x="64" y="118" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="800" fill="#fff">EMS</text>
+</svg>
